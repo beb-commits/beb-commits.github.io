@@ -1,0 +1,127 @@
+body {
+	background-color: darkred;
+	color: white;
+}
+
+h1 {
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px #000000;
+	font-family: initial;
+	color: #CBB26A;
+	background-color: darkred;
+}
+
+/* I chose the background and border type to make the h2 section headings stand out */
+
+h2 {
+	font-size: 40px;
+	font-style: oblique;
+	background-color: darkslategrey;
+	border-style: groove;
+}
+
+h3 {
+	font-size: 50px;
+}
+
+/* I wanted to make sure that the navigation bar didn't spill over, so I included overflow:  hidden; */
+.nav {
+	overflow: hidden;
+	background-color: #CBB26A;
+
+}
+/* To make my navbar line up in the correct order I used right */
+.nav a {
+	float: right;
+	color: whitesmoke;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 15px;
+}
+.nav a:hover {
+	background-color: darkslategrey;
+	color: whitesmoke;
+}
+
+li a {
+	display: block;
+	padding: 16px;
+	background-color: #CBB26A;
+}
+li {
+	list-style-type: none;
+	border-right: 1px solid black;
+	border-radius: 4px;
+	float: left;
+}
+
+form {
+	display: block;
+	float: left;
+	margin-right: 15px;
+}
+.resizedTextbox {
+	width: 385px; 
+	height: 200px
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: black;
+	font-size: 10px;
+	padding: 50px;
+	color: white;
+	margin: 100px;
+}
+
+.flex-container > div {
+	background-color: black;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+}
+.responsive {
+	width: 100%;
+	height: auto;
+}
+P {
+	font-size: 25px;
+}
+div {
+	background-color: black;
+	max-width: 100%;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	resize: auto;
+}
+@media screen and (max-width: 600px) {
+	img {
+		max-width: 100%;
+	}
+	div {
+		width: 350px;
+
+	}
+	@media screen and (max-width 900px) {
+		img {
+			max-width: 100%;
+		}
+		div {
+			width: 500px;
+		}
+	}
+
+	footer {
+		align-content: center;
+		float: right;
+		color: white;
+		font-size: 15px;
+		font-family: sans-serif;
+	}
